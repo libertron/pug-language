@@ -1,0 +1,14 @@
+doctype html
+html
+    head
+    body
+        - const state=0
+        case state
+            when 1
+                p your product is in packaging step
+            when 2
+                p your product is on staging process
+            when 3
+                p your product will be shipped to the post
+            default
+                p sorry we cannot handle this step

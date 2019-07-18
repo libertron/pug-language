@@ -1,0 +1,15 @@
+doctype html
+html
+    head
+    body
+        -const user={name:"Marcus",isLogged:true,lastLogged:6}
+        if user.isLogged
+            p
+                | Welcome to the platform 
+                strong #{user.name}
+        else if user.lastLogged < 10
+            p
+                a(href="/login") Log again 
+        else
+            p
+                a(href="/login") Login
