@@ -1,0 +1,24 @@
+doctype html
+html
+    head
+    body
+        -const fruits=["apple","bannana","orange","mangoe"]
+        .fruits
+            each n,i in fruits
+                p=n+ "-" +i
+
+        -const scores={"Haiti Vs Canada":"3-2","Haiti vs Mexique":"0-0"}
+        .matchScores
+            for n,i in scores
+                p=i+ "->"+ n
+            else
+                h1
+                    strong No values here
+
+        -const emptyArray=[]
+        .emptyArray
+            for n,i in emptyArray
+                p=i+ '-'+ n
+            else
+                h1
+                    strong No values here

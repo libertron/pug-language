@@ -1,0 +1,12 @@
+doctype html
+html
+    head
+    body
+        input(type="password" name="inpPwd" data-js=`${1>5? "OK":"NOT OK"}`)
+        - const myClasses=["class1","class2","class3"]
+        div.my-div(class=myClasses)
+        - const myStyles={"color":"red","background-color":"orange","font-size":"40px","width":"500px","height":"500px","margin":"auto","text-align":"center"}
+        div(style=myStyles) Hello
+        - const myImg={"src":"photo.png","alt":"This is my photo"}
+        img&attributes(myImg)
+        input(type="checkbox" name="inpChbx" checked)
